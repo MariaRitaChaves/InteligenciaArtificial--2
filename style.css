@@ -1,0 +1,76 @@
+:root {
+  --cor-caixa: rgba(255, 255, 255, 0.95);
+  --cor-principal: #4caf50;
+  --cor-secundaria: #81c784;
+  --cor-hover: #66bb6a;
+  --cor-texto: #1b3b2f;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+              url("img/crianca_homem_e_mulher_felizes_fazendo_uma_refeicao_na_mesa_-_rotina_saudavel_-_assai_atacadista.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.caixa-principal {
+  background: var(--cor-caixa);
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+h1, h2 {
+  color: var(--cor-principal);
+}
+
+p {
+  color: var(--cor-texto);
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--cor-secundaria);
+  font-size: 1rem;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--cor-principal);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  width: 80%;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+  transform: scale(1.03);
+}
+
+.caixa-alternativas button {
+  width: 90%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

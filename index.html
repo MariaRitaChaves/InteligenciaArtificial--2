@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você escolhe seu caminho para uma vida saudável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="caixa-principal">
+    <h1>Você escolhe seu caminho para uma vida saudável</h1>
+
+    <!-- Tela inicial -->
+    <div class="tela-inicial">
+      <p>Digite seu nome para começar:</p>
+      <input type="text" id="nomeJogador" placeholder="Seu nome">
+      <button id="btnIniciar">Começar</button>
+    </div>
+
+    <!-- Jogo -->
+    <div class="tela-jogo" style="display: none;">
+      <div class="caixa-perguntas"></div>
+      <div class="caixa-alternativas"></div>
+    </div>
+
+    <!-- Resultado -->
+    <div class="caixa-resultado" style="display: none;">
+      <h2>Resultado Final</h2>
+      <p class="texto-resultado"></p>
+      <button id="btnReiniciar">Jogar Novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
